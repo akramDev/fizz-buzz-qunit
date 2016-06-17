@@ -1,0 +1,14 @@
+{
+  "name": "qunit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tests.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 8080 -c-1 ./app"
+  },
+  "author": "akram moncer",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
