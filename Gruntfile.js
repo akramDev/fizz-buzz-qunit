@@ -9,10 +9,17 @@ module.exports = function(grunt) {
                     !err && publishResults("node", res, this.async());
                 }
             }
+        },
+        watch: {
+            scripts: {
+                files: ['./app/*.js', './tests/*.js'],
+                tasks: ['node-qunit']
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-node-qunit');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('test', ['node-qunit']);
 
